@@ -1,0 +1,52 @@
+*{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13t;
+}
+
+body{
+  margin-top: 0;
+  background-color: rgb(78, 78, 78);
+}
+
+main{
+  background-color: white;
+  margin: auto;
+  width: 1000px;
+  padding: 5px;
+}
+h1{
+  margin-top: 5px;
+  text-align: center;
+}
+
+.column{
+  display: flex;
+}
+
+#add{
+  width: 35%;
+  padding: 10px;
+}
+
+#list{
+  width: 65%;
+  padding: 10px;
+}
+
+ul{
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 5px;
+}
+
+li{
+  padding: 2px;
+}
+
+.button{
+  text-align: center;
+}
+
+#contra{
+  margin-top: 10px;
+}
