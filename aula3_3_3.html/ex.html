@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    *{
+      font: normal 18pt Arial;
+    }
+
+    .listaBonita > .selecionado:first-child{
+      border-bottom-style: none;
+    }
+
+    .listaBonita > .selecionado {
+      background-color: #bfdbff;
+      border-style: solid;
+      border-color: #2e79db;
+    }
+
+    .listaBonita{
+      color: #505050;
+    }
+
+    .listaBonita  > li{
+      list-style: none;
+      border-width: 2px;
+      border-color:  #a0a0a0;
+      padding: 4px 8px;
+      border-left-style: solid;
+      border-right-style: solid;
+
+    }
+
+    .listaBonita  > li:first-child{
+      border-top-style: solid;
+      border-top-left-radius: 4px;
+      border-top-right-radius: 4px;
+    }
+
+    .listaBonita  > li:last-child{
+      border-bottom-left-radius: 3px;
+      border-bottom-right-radius: 3px;
+      border-bottom-style: solid;
+    }
+
+    .listaBonita > li:hover{
+      background-color: #ebebeb;
+    }
+
+    .listaBonita > li:not(.selecionado) + li{
+      border-top-style: solid;
+    }
+
+
+
+  </style>
+
+</head>
+<body>
+  <ul class="listaBonita">
+    <li>item 1</li>
+    <li>item 2</li>
+    <li>item 3</li>
+  </ul>
+  <ul class="listaBonita">
+    <li class="selecionado">item 1</li>
+    <li class="selecionado">item 2</li>
+    <li>item 3</li>
+  </ul>
+  <ul class="listaBonita">
+    <li>item 1</li>
+    <li class="selecionado">item 2</li>
+    <li>item 3</li>
+    <li class="selecionado">item 4</li>
+  </ul>
+  <ul class="listaBonita">
+    <li>item 1</li>
+  </ul>
+
+  <ul>
+    <li>item 1</li>
+    <li>item 2</li>
+    <li>item 3</li>
+  </ul>
+  
+</body>
+</html>
