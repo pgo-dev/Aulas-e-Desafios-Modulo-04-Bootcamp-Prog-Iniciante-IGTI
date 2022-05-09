@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trabalho Prático módulo 04</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Simulação de financiamento</h1>
+    
+    <div class="colunas">
+      <div>
+        Valor:<br>
+        <input type="number" id="valor" value="200000">
+      </div>
+      <div>
+        Prazo(anos):<br>
+        <input type="number" id="pa" value="20">
+      </div>
+      <div>
+        Juros ao ano:<br>
+        <input type="number" id="juano" step="0.01" value="0.08">
+      </div>
+    </div>
+
+    <div class="button">
+      <input type="button" value="Simular" id="button">
+    </div>
+
+    <h1>Resultado</h1>
+    
+    <div class="colunas">
+      <div>
+        Prazo (meses:)<br>
+        <input type="number" id="pm" readonly>
+      </div>
+      <div>
+        Juros ao mês:<br>
+        <input type="number" id="juam" readonly>
+      </div>
+      <div>
+        Juros acumulados:<br>
+        <input type="number" id="juacu" step="0.01" readonly>
+      </div>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Prestação</th>
+          <th>Amortização</th>
+          <th>Juros</th>
+          <th>Total</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td class="amort"></td>
+          <td class="juros"></td>
+          <td class="presta"></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td class="amort"></td>
+          <td class="juros"></td>
+          <td class="presta"></td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td class="amort"></td>
+          <td class="juros"></td>
+          <td class="presta"></td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td class="amort"></td>
+          <td class="juros"></td>
+          <td class="presta"></td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td class="amort"></td>
+          <td class="juros"></td>
+          <td class="presta"></td>
+        </tr>
+      </tbody>
+    </table>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
