@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desafio Módulo 04</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <div class="colunas">
+      <div id="options">
+
+        <h1>Options</h1>
+        Sort by 
+        <select id="sort">
+          <option value="nas">Name (ascending)</option>
+          <option value="ndes">Name (descending)</option>
+          <option value="sas">Salary (ascending)</option>
+          <option value="sdes">Salary (descending)</option>
+        </select>
+
+        <div>
+          <fieldset><legend>Filter by roles</legend>
+          <ul></ul>
+        </fieldset>
+        </div>
+
+      </div>
+      <div id="emp">
+
+        <h1>Employees(<span id="nemp"></span>)</h1>
+        <table>
+          
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Role</th>
+                <th>Salary</th>
+              </tr>
+            </thead>
+
+          <tbody></tbody>
+
+        </table>
+      </div>
+    </div>
+  </main>
+  <script src="http.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
